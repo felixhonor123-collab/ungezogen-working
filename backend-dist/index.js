@@ -25568,7 +25568,9 @@ db.exec(`
     vorname     TEXT NOT NULL,
     nachname    TEXT NOT NULL DEFAULT '',
     telefon     TEXT NOT NULL DEFAULT '',
-    bezeichnung TEXT NOT NULL DEFAULT ''
+    bezeichnung TEXT NOT NULL DEFAULT '',
+    spitzname   TEXT NOT NULL DEFAULT '',
+    foto        TEXT NOT NULL DEFAULT ''
   );
 
   CREATE TABLE IF NOT EXISTS schuld (
