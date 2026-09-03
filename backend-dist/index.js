@@ -25768,7 +25768,7 @@ app.delete("/api/schulden/:schuldId", auth, (req, res) => {
   res.status(204).send();
 });
 app.use(express.static(DIST_PATH));
-app.get("/{*path}", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(DIST_PATH, "index.html"));
 });
 app.listen(PORT, () => {
